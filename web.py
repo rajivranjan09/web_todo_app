@@ -15,7 +15,7 @@ existing_todos = functions.load_todos()
 if 'completed_todo' not in st.session_state:
     st.session_state.completed_todo = None
 
-# Show toast if there's a completed todo
+# Show toast if there's a completed todo_item
 if st.session_state.completed_todo:
     st.toast(f":blue[The TODO \"{st.session_state.completed_todo}\" has been marked :green[completed] and :red[removed].]", icon="✅")
 
